@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.root{
+    --dark-blue:#181F32;
+    --gray:#647299;
+    --red:#D13F30;
+    --dark-gray:#3B4664;
+    --violet:#252D44;
+    --white:#FFF;
+
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color:#3B4664;
+}
+
+.calculator{
+    width: 20%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 1rem;
+}
+
+.display-screen{
+    height: 20%;
+    width: 100%;
+}
+
+.user-input{
+    background-color:#181F32 ;
+    color: white;
+    border-radius: 16px;
+    padding: 12px;
+    height: 100%;
+    width: 100%;
+    text-align: right;
+    font-size: 3rem;
+    border: none;
+}
+
+.keypad{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 70%;
+    width: 100%;
+    padding: 5%;
+    gap: 1rem;
+    background-color: #181F32;
+    border-radius: 8px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    gap: 1rem;
+}
+.key{
+    background-color: white;
+    width: 21%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.delete-key{
+    background-color:#647299;
+    width: 21%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.reset-key,
+.answer-key {
+    width: 47%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+
+.answer-key{
+    background-color: #D13F30;
+
+}
+.reset-key{
+    background-color: #647299;
+}
+.key:hover, .delete-key:hover,.answer-key:hover,.reset-key:hover{
+    cursor: pointer;
+}
+
+/* @media only screen and (min-width: 450px) {
+    /* Adjust styles for screens larger than 768px (tablets, desktops, etc.) */
+    /* .calculator { */
+        /* width: 30%;
+    } */
+
+    /* .key,
+    .delete-key,
+    .reset-key,
+    .answer-key { */
+        /* width: 21%;
+        margin-bottom: 0; Remove margin for larger screens */
+       
+    /* }
+} */ 
