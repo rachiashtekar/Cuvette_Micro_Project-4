@@ -15,6 +15,7 @@ deletekey.addEventListener("click",function(){
 
 answerkey.addEventListener("click",function(){
     const expression=userInput.value;
+    console.log(expression)
     const formattedExpression=expression.replace("x","*");
     const result=eval(formattedExpression)
     userInput.value=result;
@@ -27,6 +28,7 @@ resetkey.addEventListener("click",function(){
 
 const keysArray=Array.from(keys);
 keysArray.forEach((key)=>{
+    console.log(key)
     key.addEventListener("click",(event)=>{
         console.log(event.target.innerText);
         const value=event.target.innerText;
