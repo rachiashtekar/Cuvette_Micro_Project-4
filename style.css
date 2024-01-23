@@ -112,7 +112,7 @@
 .key:hover, .delete-key:hover,.answer-key:hover,.reset-key:hover{
     cursor: pointer;
 }
-@media (max-width: 600px) {
+@media screen and (max-width: 600px) {
     .calculator {
         width: 90%;
     }
