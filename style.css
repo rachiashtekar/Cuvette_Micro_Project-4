@@ -112,19 +112,9 @@
 .key:hover, .delete-key:hover,.answer-key:hover,.reset-key:hover{
     cursor: pointer;
 }
+@media (max-width: 600px) {
+    .calculator {
+        width: 90%;
+    }
+}
 
-/* @media only screen and (min-width: 450px) {
-    /* Adjust styles for screens larger than 768px (tablets, desktops, etc.) */
-    /* .calculator { */
-        /* width: 30%;
-    } */
-
-    /* .key,
-    .delete-key,
-    .reset-key,
-    .answer-key { */
-        /* width: 21%;
-        margin-bottom: 0; Remove margin for larger screens */
-       
-    /* }
-} */ 
